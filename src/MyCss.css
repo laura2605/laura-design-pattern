@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+.myWidth {
+  min-width: 300px;
+}
+.someSpace {
+  padding: 50px 0 50px 0; 
+}
+.rounded {
+  border-radius: 10px; 
+  border: solid 1px #dee2e6; 
+}

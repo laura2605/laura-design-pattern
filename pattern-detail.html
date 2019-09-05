@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/MyCss.css">
+    <link rel="stylesheet" href="./src/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <title>Pattern Kategorie</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="someSpace">
+        <table class="table table-striped table-hover table-responsive rounded" >
+          <tbody>
+            <tr>
+              <td><b>Kategorie: </b></td>
+              <td>Creational</td>
+            </tr>
+            <tr>
+              <td><b>Name: </b></td>
+              <td>Strategy</td>
+            </tr>
+            <tr>
+              <td><b>Definition: </b></td>
+              <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</td>
+            </tr>
+            <tr>
+              <td><b>Beschreibung: </b></td>
+              <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </td>
+            </tr>
+            <tr>
+              <td><b>Beispiel: </b></td>
+              <td>
+                <pre>class Context:
+                    def __init__(self, strategy):
+                        self.strategy = strategy
+                
+                    def execute(self, a, b):
+                        return self.strategy(a, b)
+                
+                
+                class AddStrategy:
+                    def __call__(self, a, b):
+                        return a + b
+                
+                class SubStrategy:
+                    def __call__(self, a, b):
+                        return a - b
+                
+                context = Context(AddStrategy())
+                print('4 + 3 =', context.execute(4, 3))
+                # 4 + 3 = 7
+                
+                context.strategy = SubStrategy()
+                print('4 - 3 =', context.execute(4, 3))
+                # 4 - 3 = 1
+                
+                </pre>
+              
+          </td>
+            </tr>
+            <tr>
+              <td><b>UML/Klassendiagram: </b></td>
+              <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Strategie.png"></td>
+            </tr>
+            <tr>
+                <td><b>Quelle/n: </b></td>
+                <td>
+                  <ul>
+                    <li><a href="#">Quelle-1.de</a></li>
+                    <li><a href="#">Quelle-2.de</a></li>
+                    <li><a href="#">Quelle-3.de</a></li>
+                  </ul>
+                </td>
+              </tr>
+            <tr>
+              <td><b>Links: </b></td>
+              <td>
+                <ul>
+                  <li><a href="#">Nützlich-1.de</a></li>
+                  <li><a href="#">Nützlich-2.de</a></li>
+                  <li><a href="#">Nützlich-3.de</a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
